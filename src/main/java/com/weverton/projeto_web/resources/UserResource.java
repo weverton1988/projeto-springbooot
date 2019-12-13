@@ -1,5 +1,7 @@
 package com.weverton.projeto_web.resources;
 
+
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +15,7 @@ public class UserResource {
 
 	@GetMapping
 	public ResponseEntity<User> findAll() {
-		User u = new User(1l, "Maria", "maria@gmail.com", "999999", "1234");	
+		User u = new User(1l, "Maria", "maria@gmail.com", "999999", "1234");
 		return ResponseEntity.ok().body(u);
 	}
 }
